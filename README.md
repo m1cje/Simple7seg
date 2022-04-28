@@ -32,7 +32,7 @@ This command is required to create an instance of the Simple7seg driver.  It sho
 
 ### Function Reference
 #### simple7seg display(CHIPSSELECT)
-This will create an instance of the driver using the pin specified by CHIPSELECT and the default din of D7 and clk of D5.<br>
+This will create an instance of the driver using the pin specified by CHIPSELECT and the default of D7 for din and D5 for clk.<br>
 ```
   simple7seg display(byte cs);
 ```
@@ -54,7 +54,7 @@ This function will display a single character at a given position.  Accepted cha
   displayChar(byte pos, char msg);
 ```
 ##### Parameters
-  _byte pos_ - The position on the display module where to display the character.  Potition 8 is on the left an position 1 is on the right.<br>
+  _byte pos_ - The position where on the display module to display the character.  Position 8 is on the left and position 1 is on the right.<br>
   _char msg_ - The character to display, see above for permitted characters.<br>
 ##### Returns
   Nothing.<br>
@@ -80,7 +80,7 @@ This function will turn on or off the decimal point state.  It does not display 
   Nothing.<br>
 
 #### setIntensity(level)
-This function sets the output intensity to a level from 0 to 15 with 15 being the brightest.<br>
+This function sets the output intensity to a level from 0 to 15.  The function operates independantly of the character write function.<br>
 ```
   setIntensity(byte level);
 ```
