@@ -1,0 +1,28 @@
+############################################
+# Syntax Coloring Map For SimpleSNMP library
+############################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Simple7seg      KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+simple7seg     KEYWORD2
+displayChar    KEYWORD2
+displayMessage KEYWORD2
+setDP          KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+MAX7219_REG_DECODE    LITERAL1
+MAX7219_REG_INTENSITY LITERAL1
+MAX7219_REG_SCANLIMIT LITERAL1
+MAX7219_REG_SHUTDOWN  LITERAL1
+MAX7219_REG_DISPTEST  LITERAL1
+
